@@ -5,7 +5,7 @@ const SimpleInput = (props) => {
     setEnteredName(event.target.value)
   }
 
-  const formSubmitHandler = (event) = {
+  const formSubmitHandler = (event) => {
     event.preventDefault()
     console.log(enteredName)
   }
