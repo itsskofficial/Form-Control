@@ -14,6 +14,8 @@ const SimpleInput = (props) => {
     
     const inputValue = nameInputRef.current.value
     console.log(inputValue)
+
+    setEnteredName
   }
 
   return (
