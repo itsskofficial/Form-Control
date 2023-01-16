@@ -7,8 +7,9 @@ const SimpleInput = (props) => {
 
   const formSubmitHandler = (event) = {
     event.preventDefault()
-    console.log()
+    console.log(enteredName)
   }
+  
   return (
     <form>
       <div className='form-control'>
