@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const SimpleInput = (props) => {
   const [enteredName, setEnteredName] = useState('')
   const [enteredNameTouched,setEnteredNameTouched]=useState(false)
   const enteredNameValidity = !enteredName.trim().length === 0 && enteredNameTouched ? true : false
   
+  useEffect(() => {
+    
+  })
   const inputChangeHandler = (event) => {
     setEnteredName(event.target.value)
   }
@@ -16,7 +19,7 @@ const SimpleInput = (props) => {
   const formSubmitHandler = (event) => {
     event.preventDefault()
     setEnteredNameTouched(true)
-    
+
     if (!enteredNameValidity) {
       return
     }
