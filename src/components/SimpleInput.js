@@ -12,7 +12,7 @@ const SimpleInput = (props) => {
     event.preventDefault()
     console.log(enteredName)
     
-    const 
+    const inputVal
   }
 
   return (
