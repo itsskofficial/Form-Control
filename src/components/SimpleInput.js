@@ -24,7 +24,7 @@ const SimpleInput = (props) => {
     setEnteredName('')
   }
 
-  const 
+  const nameInputClasses
 
   return (
     <form onSubmit={formSubmitHandler}>
