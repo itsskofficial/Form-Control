@@ -83,7 +83,7 @@ button:disabled,
 button:disabled:hover,
 button:disabled:active{
   background-color: grey;
-  
+  color: ;
 }
 
 .form-actions {
