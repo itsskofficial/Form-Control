@@ -5,7 +5,9 @@ const SimpleInput = (props) => {
     setEnteredName(event.target.value)
   }
 
-  const formSubmitHandler = (event)
+  const formSubmitHandler = (event) = {
+    
+  }
   return (
     <form>
       <div className='form-control'>
