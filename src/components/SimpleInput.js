@@ -4,7 +4,7 @@ const SimpleInput = (props) => {
   const [enteredName, setEnteredName] = useState('')
   const [enteredNameValidity, setEnteredNameValidity] = useState(false)
   const [enteredNameTouched,setEnteredNameTouched]=useState(false)
-  const enteredNameValidity = !enteredName.trim(.)
+  const enteredNameValidity = !enteredName.trim().length===0
   const inputChangeHandler = (event) => {
     setEnteredName(event.target.value)
   }
