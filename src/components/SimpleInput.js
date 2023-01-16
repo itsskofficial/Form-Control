@@ -1,5 +1,5 @@
 const SimpleInput = (props) => {
-  const [enteredNa]
+  const [enteredName,setEnteredName] = useSta
   return (
     <form>
       <div className='form-control'>
