@@ -8,6 +8,8 @@ const SimpleInput = (props) => {
     setEnteredName(event.target.value)
   }
 
+  if (enteredName.trim().length===0)
+
   const formSubmitHandler = (event) => {
     event.preventDefault()
     console.log(enteredName)
