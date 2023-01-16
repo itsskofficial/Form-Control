@@ -8,7 +8,7 @@ const SimpleInput = (props) => {
   
   useEffect(() => {
     enteredNameValidity ? setFormValidity(true) : setFormValidity(false)
-  }, [en])
+  }, [enteredNameValidity])
 
   const inputChangeHandler = (event) => {
     setEnteredName(event.target.value)
