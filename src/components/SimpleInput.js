@@ -2,8 +2,10 @@ const SimpleInput = (props) => {
   const [enteredName,setEnteredName] = useState('')
 
   const inputChangeHandler = (event) => {
-    setEnteredName()
+    setEnteredName(event.target.value)
   }
+
+  const formSubmitHandler = (event)
   return (
     <form>
       <div className='form-control'>
