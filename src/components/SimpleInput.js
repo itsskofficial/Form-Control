@@ -8,6 +8,7 @@ const SimpleInput = (props) => {
 
   const inputChangeHandler = (event) => {
     setEnteredName(event.target.value)
+    setEnteredNameTouched(true)
   }
 
   if (enteredName.trim().length === 0) {
