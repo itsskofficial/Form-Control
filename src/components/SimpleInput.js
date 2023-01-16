@@ -9,9 +9,9 @@ const SimpleInput = (props) => {
     event.preventDefault()
     console.log(enteredName)
   }
-  
+
   return (
-    <form>
+    <form onSubmit={formSubmitHandler}>
       <div className='form-control'>
         <label htmlFor='name'>Your Name</label>
         <input type='text' id='name' />
