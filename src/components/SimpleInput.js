@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 
 const SimpleInput = (props) => {
   const [enteredName, setEnteredName] = useState('')
-  const [enteredNameValidity,setEnteredNameValidity]
+  const [enteredNameValidity,setEnteredNameValidity] = useState(true)
   const nameInputRef = useRef()
 
   const inputChangeHandler = (event) => {
@@ -10,6 +10,7 @@ const SimpleInput = (props) => {
   }
 
   if (enteredName.trim().length === 0) {
+    setEN
     return
   }
 
