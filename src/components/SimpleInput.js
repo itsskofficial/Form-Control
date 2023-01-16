@@ -10,10 +10,10 @@ const SimpleInput = (props) => {
   }
 
   if (enteredName.trim().length === 0) {
-    setEN
+    setEnteredNameValidity(false)
     return
   }
-
+  
   const formSubmitHandler = (event) => {
     event.preventDefault()
     console.log(enteredName)
