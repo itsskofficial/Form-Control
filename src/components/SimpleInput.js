@@ -10,6 +10,10 @@ const SimpleInput = (props) => {
     setEnteredName(event.target.value)
   }
 
+  const inputBlurHandler = (event) => {
+    set
+  }
+
   if (enteredName.trim().length === 0) {
     setEnteredNameValidity(false)
     return
