@@ -2,11 +2,12 @@ import { useEffect, useState } from "react";
 
 const SimpleInput = (props) => {
   const [enteredName, setEnteredName] = useState('')
-  const [enteredNameTouched,setEnteredNameTouched]=useState(false)
+  const [enteredNameTouched, setEnteredNameTouched] = useState(false)
+  const [form]
   const enteredNameValidity = !enteredName.trim().length === 0 && enteredNameTouched ? true : false
   
   useEffect(() => {
-    enteredNameValidity ? setFormValidity(true) : set
+    enteredNameValidity ? setFormValidity(true) : setFormValidity(false)
   })
   const inputChangeHandler = (event) => {
     setEnteredName(event.target.value)
