@@ -20,7 +20,7 @@ const SimpleInput = (props) => {
     <form onSubmit={formSubmitHandler}>
       <div className='form-control'>
         <label htmlFor='name'>Your Name</label>
-        <input type='text' id='name' onChange={inputChangeHandler}/>
+        <input ref={type='text' id='name' onChange={inputChangeHandler}/>
       </div>
       <div className="form-actions">
         <button>Submit</button>
