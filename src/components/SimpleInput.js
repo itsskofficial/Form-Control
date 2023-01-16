@@ -1,6 +1,8 @@
+import { useRef } from "react";
+
 const SimpleInput = (props) => {
   const [enteredName, setEnteredName] = useState('')
-  const nameInputRef
+  const nameInputRef = useRef()
 
   const inputChangeHandler = (event) => {
     setEnteredName(event.target.value)
