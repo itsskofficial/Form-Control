@@ -1,4 +1,5 @@
 const SimpleInput = (props) => {
+  const [enteredNa]
   return (
     <form>
       <div className='form-control'>
