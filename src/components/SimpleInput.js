@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 
 const SimpleInput = (props) => {
   const [enteredName, setEnteredName] = useState('')
-  const [enteredNameValidity, setEnteredNameValidity] = useState(true)
+  const [enteredNameValidity, setEnteredNameValidity] = useState(false)
   const [enteredNameTouched,setEnteredNameTouched]=useState(false)
   const nameInputRef = useRef()
 
