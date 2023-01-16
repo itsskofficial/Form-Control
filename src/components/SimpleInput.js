@@ -12,8 +12,6 @@ const SimpleInput = (props) => {
   const inputBlurHandler = (event) => {
     setEnteredNameTouched(true)
   }
-
-  setEnteredNameValidity(true)
   
 
   const formSubmitHandler = (event) => {
@@ -24,7 +22,7 @@ const SimpleInput = (props) => {
     setEnteredName('')
   }
 
-  const nameInputClass=enteredNameValidity && enteredNameTouched ? 'form-control' : 'form-control invalid'
+  const nameInputClass=enteredNameValidity ? 'form-control' : 'form-control invalid'
 
   return (
     <form onSubmit={formSubmitHandler}>
