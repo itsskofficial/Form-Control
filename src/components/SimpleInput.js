@@ -6,7 +6,7 @@ const SimpleInput = (props) => {
   const enteredNameValidity = !enteredName.trim().length === 0 && enteredNameTouched ? true : false
   
   useEffect(() => {
-    
+    if (entered\
   })
   const inputChangeHandler = (event) => {
     setEnteredName(event.target.value)
