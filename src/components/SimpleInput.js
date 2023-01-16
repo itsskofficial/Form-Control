@@ -35,7 +35,7 @@ const SimpleInput = (props) => {
     <form onSubmit={formSubmitHandler}>
       <div className={nameInputClass}>
         <label htmlFor='name'>Your Name</label>
-        <input value={enteredName} ref={nameInputRef} type='text' id='name' onChange={inputChangeHandler}/>
+        <input value={enteredName} ref={nameInputRef} type='text' id='name' onBlur={nameInonChange={inputChangeHandler}/>
       </div>
       {!enteredNameValidity && enteredNameTouched && <p>Name cannot be empty</p>}
       <div className="form-actions">
