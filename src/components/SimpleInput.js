@@ -40,7 +40,7 @@ const SimpleInput = (props) => {
       </div>
       {!enteredNameValidity && <p>Name cannot be empty</p>}
       <div className="form-actions">
-        <button>Submit</button>
+        <button disabled={!}>Submit</button>
       </div>
     </form>
   );
