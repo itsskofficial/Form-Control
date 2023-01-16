@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 const SimpleInput = (props) => {
   const [enteredName, setEnteredName] = useState('')
   const [enteredNameTouched,setEnteredNameTouched]=useState(false)
-  const enteredNameValidity = !enteredName.trim().length===0 && enteredNameTouched ? true : false
+  const enteredNameValidity = !enteredName.trim().length === 0 && enteredNameTouched ? true : false
   
   const inputChangeHandler = (event) => {
     setEnteredName(event.target.value)
@@ -12,10 +12,6 @@ const SimpleInput = (props) => {
   const inputBlurHandler = (event) => {
     setEnteredNameTouched(true)
 
-    if (enteredName.trim().length === 0) {
-      setEnteredNameValidity(false)
-      return
-    }
   }
 
   if (enteredName.trim().length === 0) {
