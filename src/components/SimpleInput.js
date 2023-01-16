@@ -2,7 +2,7 @@ const SimpleInput = (props) => {
   const [enteredName,setEnteredName] = useState('')
 
   const inputChangeHandler = (event) => {
-    setEb
+    setEnteredName()
   }
   return (
     <form>
