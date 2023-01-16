@@ -12,7 +12,8 @@ const SimpleInput = (props) => {
     event.preventDefault()
     console.log(enteredName)
     
-    const inputVal
+    const inputValue = nameInputRef.current.value
+    console.log(inputValue)
   }
 
   return (
