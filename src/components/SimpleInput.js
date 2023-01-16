@@ -15,7 +15,10 @@ const SimpleInput = (props) => {
   
   const formSubmitHandler = (event) => {
     event.preventDefault()
-    if 
+    if (!enteredNameValidity) {
+      return
+    }
+    
     setEnteredNameTouched(true)
     setEnteredName('')
   }
