@@ -30,7 +30,7 @@ const SimpleInput = (props) => {
         <label htmlFor='name'>Your Name</label>
         <input value={enteredName} ref={nameInputRef} type='text' id='name' onChange={inputChangeHandler}/>
       </div>
-      {!enter}
+      {!enteredNameValidity}
       <div className="form-actions">
         <button>Submit</button>
       </div>
