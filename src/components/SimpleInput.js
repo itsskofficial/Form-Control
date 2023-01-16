@@ -13,7 +13,10 @@ const SimpleInput = (props) => {
   const inputBlurHandler = (event) => {
     setEnteredNameTouched(true)
 
-    
+    if (enteredName.trim().length === 0) {
+      setEnteredNameValidity(false)
+      return
+    }
   }
 
   if (enteredName.trim().length === 0) {
