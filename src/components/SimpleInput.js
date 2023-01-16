@@ -1,5 +1,7 @@
 const SimpleInput = (props) => {
-  const [enteredName,setEnteredName] = useSta
+  const [enteredName,setEnteredName] = useState('')
+
+  
   return (
     <form>
       <div className='form-control'>
