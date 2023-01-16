@@ -13,7 +13,7 @@ const SimpleInput = (props) => {
     setEnteredNameValidity(false)
     return
   }
-  
+
   const formSubmitHandler = (event) => {
     event.preventDefault()
     console.log(enteredName)
@@ -30,6 +30,7 @@ const SimpleInput = (props) => {
         <label htmlFor='name'>Your Name</label>
         <input value={enteredName} ref={nameInputRef} type='text' id='name' onChange={inputChangeHandler}/>
       </div>
+      {!enter}
       <div className="form-actions">
         <button>Submit</button>
       </div>
